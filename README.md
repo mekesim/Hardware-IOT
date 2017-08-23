@@ -1,3 +1,4 @@
-# My Awesome Book
+# 介绍
 
-This file file serves as your book's preface, a great place to describe your book's content and ideas.
+本文记录了笔者利用开源硬件Arduino，树莓派实现物联网的过程。
+
