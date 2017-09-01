@@ -32,3 +32,5 @@ After instanllation, connect USB cable to PC, it will find there is a USB-SERIAL
 
 Select your Wemos D1 R2 & mini board from Tools &gt; Board menu after installation.
 
+
+
