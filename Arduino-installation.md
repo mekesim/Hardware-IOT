@@ -26,12 +26,10 @@ After instanllation, connect USB cable to PC, it will find there is a USB-SERIAL
 * Enter `http://arduino.esp8266.com/stable/package_esp8266com_index.json` into Additional Board Manager URLs field. You can add multiple URLs, separating them with commas.
 * Open Boards Manager from Tools &gt; Board menu and find esp8266 platform.
 * Select the version you need from a drop-down box.
-* Click install button.
+* Click install button. It may need a very long time to download it.
 * Don't forget to select your ESP8266 board from Tools &gt; Board menu after installation.
 
 ![](/assets/esp8266_board.png)
 
 aa
-
-
 
