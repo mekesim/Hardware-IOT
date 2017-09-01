@@ -34,19 +34,6 @@ Clock Polarity时钟在高还是低电平时闲置，clock phase数据是在Cloc
 
 ![](/assets/max6675data.png)
 
-
-
-Arduino中的SPI通信是通过SPIClass类来实现的，使用SPIClass类能够方便地将Arduino作为主设备与其他从设备通信。SPIClass类提供了6个成员函数供使用者调用，如下：
-
-```
-begin()
-setBitOrder ()
-setClockDivider ()
-setDataMode ()
-transfer ()
-end ()
-```
-
 ### begin 函数
 
 begin 函数用于初始化SPI总线，函数原型如下：
