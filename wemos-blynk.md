@@ -100,5 +100,7 @@ void loop()
 }
 ```
 
-ALL DONE!
+Once upload, open ser monitor, it shows as below:
+
+![](/assets/blynk_out.png)
 
