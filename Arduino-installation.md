@@ -34,3 +34,15 @@ Select your Wemos D1 R2 & mini board from Tools &gt; Board menu after installati
 
 ![](/assets/wemos_setting.png)
 
+
+
+## Wemos Pin
+
+![](/assets/wemospin.png)
+
+From the pin map, I can juess I got a Wemos D1 R1 board.
+
+
+
+
+
