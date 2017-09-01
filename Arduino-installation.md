@@ -8,9 +8,17 @@
 3. 选择合适的端口。一般会自动选择，如果有多个设备连接到电脑手动选择合适的端口。  
    ![](/assets/import.png)
 
-
-
 ## Wemos 安装
+
+### Installing the CH340G Drivers 
+
+CH340G is a cheap serial to USB programming chip and does not come with native windows or mac drivers. However it has been made very easy to install.
+
+Download and install the drivers here.
+
+After instanllation, connect USB cable to PC, it will find there is a USB-SERIAL CH340 item under Ports \(COM & LPT\).
+
+![](/assets/comport.png)
 
 
 
