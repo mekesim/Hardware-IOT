@@ -10,17 +10,24 @@
 
 ## Wemos 安装
 
-### Installing the CH340G Drivers 
+### Installing the CH340G Drivers
 
-CH340G is a cheap serial to USB programming chip and does not come with native windows or mac drivers. However it has been made very easy to install.
+CH340G is a cheap serial to USB programming chip and does not come with native windows or mac drivers. However it has been made very easy to install.
 
-Download and install the drivers here.
+Download and install the drivers [here](https://github.com/mekesim/Hardware-IOT/blob/master/assets/CH341SER.zip).
 
 After instanllation, connect USB cable to PC, it will find there is a USB-SERIAL CH340 item under Ports \(COM & LPT\).
 
 ![](/assets/comport.png)
 
+### Installation ESP8266 Platform
 
+* Start Arduino and open Preferences window.
+* Enter `http://arduino.esp8266.com/stable/package_esp8266com_index.json` into Additional Board Manager URLs field. You can add multiple URLs, separating them with commas.
+* Open Boards Manager from Tools &gt; Board menu and find esp8266 platform.
+* Select the version you need from a drop-down box.
+* Click install button.
+* Don't forget to select your ESP8266 board from Tools &gt; Board menu after installation.
 
-
+![](/assets/esp8266_board.png)
 
