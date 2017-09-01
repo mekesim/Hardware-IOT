@@ -20,6 +20,8 @@ Download the latest release .zip file. [DOWNLOAD BLYNK LIBRARY](#)
 
    Mac OS:`Arduino → Preferences`
 
+or you can use Arduino IDE to intall it.![](/assets/bylnk_lib_install.png)
+
 ## 3. Code of Wemos board
 
 1. Power on Wemos board.
