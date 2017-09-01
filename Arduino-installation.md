@@ -20,3 +20,16 @@ After instanllation, connect USB cable to PC, it will find there is a USB-SERIAL
 
 ![](/assets/comport.png)
 
+### Test Wemos
+
+* Start Arduino and open Preferences window.
+* Enter http://arduino.esp8266.com/stable/package\_esp8266com\_index.json into Additional Board Manager URLs field. You can add multiple URLs, separating them with commas.
+* Open Boards Manager from Tools &gt; Board menu and find esp8266 platform.
+* Select the version you need from a drop-down box.
+* Click install button.
+* Don't forget to select your ESP8266 board from Tools &gt; Board menu after installation.
+
+You may optionally use staging boards manager package link: http://arduino.esp8266.com/staging/package\_esp8266com\_index.json. This may contain some new features, but at the same time, some things might be broken.
+
+
+
