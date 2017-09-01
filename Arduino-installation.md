@@ -27,9 +27,8 @@ After instanllation, connect USB cable to PC, it will find there is a USB-SERIAL
 * Open Boards Manager from Tools &gt; Board menu and find esp8266 platform.
 * Select the version you need from a drop-down box.
 * Click install button. It may need a very long time to download it.
-* Don't forget to select your ESP8266 board from Tools &gt; Board menu after installation.
 
 ![](/assets/esp8266_board.png)
 
-aa
+Select your Wemos D1 R2 & mini board from Tools &gt; Board menu after installation.
 
