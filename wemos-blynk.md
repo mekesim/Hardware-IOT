@@ -104,3 +104,21 @@ Once upload, open ser monitor, it shows as below:
 
 ![](/assets/blynk_out.png)
 
+
+
+
+
+# UNO and Blynk
+
+![](/assets/blynk_uno_example.png)
+
+Find the path to Blynk library, such as `My Documents\Arduino\libraries\Blynk\scripts`
+
+right click, Open commond wind here,
+
+Run`blynk-ser.bat`file. For example :`blynk-ser.bat -c COM4`\(where COM4 is port with your Arduino\)
+
+And press “Enter”, press “Enter” and press “Enter”
+
+
+
