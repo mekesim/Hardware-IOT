@@ -20,7 +20,7 @@ After instanllation, connect USB cable to PC, it will find there is a USB-SERIAL
 
 ![](/assets/comport.png)
 
-### Installation ESP8266 platform
+### Installation ESP8266 Platform
 
 * Start Arduino and open Preferences window.
 * Enter `http://arduino.esp8266.com/stable/package_esp8266com_index.json` into Additional Board Manager URLs field. You can add multiple URLs, separating them with commas.
@@ -30,6 +30,4 @@ After instanllation, connect USB cable to PC, it will find there is a USB-SERIAL
 * Don't forget to select your ESP8266 board from Tools &gt; Board menu after installation.
 
 ![](/assets/esp8266_board.png)
-
-
 
