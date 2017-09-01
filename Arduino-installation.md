@@ -30,5 +30,7 @@ After instanllation, connect USB cable to PC, it will find there is a USB-SERIAL
 
 ![](/assets/esp8266_board.png)
 
-Select your Wemos D1 R2 & mini board from Tools &gt; Board menu after installation. Then you can updolad code to Wemos board.
+Select your Wemos D1 R2 & mini board from Tools &gt; Board menu after installation. And set upload speed as 115200, the COM port according to your PC.
+
+![](/assets/wemos_setting.png)
 
