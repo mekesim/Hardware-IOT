@@ -14,7 +14,7 @@ git pull https://github.com/eclipse/mosquitto.git
 
 ```
 sudo apt-get update
-sudo apt-get install libssl-dev uuid-dev xsltproc docbook-xsl
+sudo apt-get install libssl-dev uuid-dev xsltproc docbook-xsl libc-ares-dev
 ```
 
 编译 安装
@@ -29,6 +29,4 @@ sudo make install
 修改config.mk中的WITH\_SRV:=yes，改为WITH\_SRV:=no
 
 其他问题没有碰到，如果有自行搜索解决。
-
-
 
