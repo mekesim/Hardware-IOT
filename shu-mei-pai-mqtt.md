@@ -26,3 +26,37 @@ sudo make install
 
 如有问题自行搜索解决。
 
+
+
+## 3. 测试运行
+
+启动mosquitto服务。
+
+`mosquitto -v`
+
+得到如下结果
+
+```
+1504517896: mosquitto version 1.4.14 (build date 2017-09-04 16:57:39+0800) starting
+1504517896: Using default config.
+1504517896: Opening ipv4 listen socket on port 1883.
+1504517896: Opening ipv6 listen socket on port 1883.
+```
+
+订阅端通过mosquitto\_sub订阅指定主题的消息.
+
+1. `mosquitto_sub -v -t BBColle01`
+
+   * -v:打印更多的调试信息
+   * -t:订阅的主题（title）
+
+2. 发布者通过mosquitto\_pub发布指定主题的消息。
+
+   `mosquitto_pub -v -t BBColle01 -m "{\"id\":\"Nekotter\"}"`
+
+3. 转发服务器把该主题的消息推送到订阅端。
+
+这里发布端，代理服务器，订阅端都为localhost。
+
+
+
