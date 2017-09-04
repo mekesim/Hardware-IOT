@@ -10,22 +10,25 @@ git pull https://github.com/eclipse/mosquitto.git
 
 ## 2. 安装
 
-\# 编译 安装
+编译前需安装必须的相关包
+
+```
+sudo apt-get update
+sudo apt-get install libssl-dev uuid-dev xsltproc docbook-xsl
+```
+
+编译 安装
 
 ```
 make
 sudo make install
 ```
 
-1. 编译找不到openssl/ssl.h，需安装openssl
+编译过程找不到ares.h
 
-```
-sudo apt-get update
-sudo apt-get install libssl-dev
-```
+修改config.mk中的WITH\_SRV:=yes，改为WITH\_SRV:=no
 
-1. 编译过程找不到ares.h
-   修改config.mk中的WITH\_SRV:=yes，改为WITH\_SRV:=no
+其他问题没有碰到，如果有自行搜索解决。
 
 
 
