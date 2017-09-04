@@ -47,17 +47,16 @@ sudo make install
 mosquitto_sub -h hostip -p 1883 -t test -i respi
 ```
 
-1. * -v:打印更多的调试信息
-   * -t:订阅的主题（title）
-2. 发布者通过mosquitto\_pub发布指定主题的消息。
+* -v:打印更多的调试信息
+* -t:订阅的主题（title）
 
-   `mosquitto_pub -v -t BBColle01 -m "{\"id\":\"Nekotter\"}"`
+发布者通过mosquitto\_pub发布指定主题的消息。
 
-3. 转发服务器把该主题的消息推送到订阅端。
+`mosquitto_pub -v -t BBColle01 -m "{\"id\":\"Nekotter\"}"`
 
-这里发布端，代理服务器，订阅端都为localhost。
+转发服务器把该主题的消息推送到订阅端。
 
-1. 配置
+## 配置
 
 配置文件在
 
