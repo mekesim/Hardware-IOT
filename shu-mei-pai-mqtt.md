@@ -14,7 +14,7 @@ git pull https://github.com/eclipse/mosquitto.git
 
 ```
 sudo apt-get update
-sudo apt-get install libssl-dev uuid-dev xsltproc docbook-xsl libc-ares-dev
+sudo apt-get install libssl-dev uuid-dev xsltproc docbook-xsl libc-ares-dev libc-ares2
 ```
 
 编译 安装
