@@ -24,9 +24,5 @@ make
 sudo make install
 ```
 
-编译过程找不到ares.h
-
-修改config.mk中的WITH\_SRV:=yes，改为WITH\_SRV:=no
-
-其他问题没有碰到，如果有自行搜索解决。
+如果有自行搜索解决。
 
