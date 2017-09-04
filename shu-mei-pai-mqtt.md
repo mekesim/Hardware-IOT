@@ -24,5 +24,5 @@ make
 sudo make install
 ```
 
-如果有自行搜索解决。
+如有问题自行搜索解决。
 
