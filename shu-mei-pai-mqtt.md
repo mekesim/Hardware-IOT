@@ -8,7 +8,12 @@ git init
 git pull https://github.com/eclipse/mosquitto.git
 ```
 
+## 2. 安装
 
+```
+sudo apt-get update
+sudo apt-get install libssl-dev
+```
 
 
 
