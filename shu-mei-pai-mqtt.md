@@ -44,14 +44,11 @@ sudo make install
 订阅端通过mosquitto\_sub订阅指定主题的消息.
 
 ```
-mosquitto_sub -h hostip -p 8083 -t test -i respi
+mosquitto_sub -h hostip -p 1883 -t test -i respi
 ```
 
-1. `mosquitto_sub -v -t BBColle01`
-
-   * -v:打印更多的调试信息
+1. * -v:打印更多的调试信息
    * -t:订阅的主题（title）
-
 2. 发布者通过mosquitto\_pub发布指定主题的消息。
 
    `mosquitto_pub -v -t BBColle01 -m "{\"id\":\"Nekotter\"}"`
