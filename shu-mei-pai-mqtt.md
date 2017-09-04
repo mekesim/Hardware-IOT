@@ -26,8 +26,6 @@ sudo make install
 
 如有问题自行搜索解决。
 
-
-
 ## 3. 测试运行
 
 启动mosquitto服务。
@@ -45,6 +43,10 @@ sudo make install
 
 订阅端通过mosquitto\_sub订阅指定主题的消息.
 
+```
+mosquitto_sub -h hostip -p 8083 -t test -i respi
+```
+
 1. `mosquitto_sub -v -t BBColle01`
 
    * -v:打印更多的调试信息
@@ -57,6 +59,18 @@ sudo make install
 3. 转发服务器把该主题的消息推送到订阅端。
 
 这里发布端，代理服务器，订阅端都为localhost。
+
+1. 配置
+
+配置文件在
+
+_mosquitto/mosquitto.conf_
+
+修改好后重启服务。
+
+`sudo systemctl restart mosquitto`
+
+## 
 
 
 
