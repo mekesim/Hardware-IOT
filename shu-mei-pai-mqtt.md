@@ -17,7 +17,7 @@ make
 sudo make install
 ```
 
-1. 编译找不到openssl/ssl.h   ，需安装openssl
+1. 编译找不到openssl/ssl.h，需安装openssl
 
 ```
 sudo apt-get update
