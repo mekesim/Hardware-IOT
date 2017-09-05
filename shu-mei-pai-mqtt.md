@@ -37,6 +37,8 @@ sudo make install
 
 如有问题自行搜索解决。
 
+### 测试运行
+
 启动mosquitto服务。
 
 `mosquitto -v`
@@ -69,8 +71,6 @@ _mosquitto/mosquitto.conf_
 ```
 sudo apt-get install mosquitto-clients
 ```
-
-### 测试运行
 
 订阅端通过mosquitto\_sub订阅指定主题的消息.
 
