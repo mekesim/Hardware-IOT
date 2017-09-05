@@ -82,7 +82,11 @@ _mosquitto/mosquitto.conf_
 
 `sudo systemctl restart mosquitto`
 
-## 
+## Python客户端
+
+```
+sudo pip install paho-mqtt
+```
 
 
 
