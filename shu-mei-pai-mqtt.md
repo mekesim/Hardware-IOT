@@ -37,14 +37,6 @@ sudo make install
 
 如有问题自行搜索解决。
 
-如果树莓派作为客户端只需
-
-```
-sudo apt-get install mosquitto-clients
-```
-
-## 3. 测试运行
-
 启动mosquitto服务。
 
 `mosquitto -v`
@@ -57,6 +49,28 @@ sudo apt-get install mosquitto-clients
 1504517896: Opening ipv4 listen socket on port 1883.
 1504517896: Opening ipv6 listen socket on port 1883.
 ```
+
+## 配置
+
+配置文件在
+
+_mosquitto/mosquitto.conf_
+
+修改好后重启服务。
+
+`sudo systemctl restart mosquitto`
+
+# 客户端安装
+
+有多种客户端，选择其中两个介绍。
+
+## 1.mosquitto-clients客户端
+
+```
+sudo apt-get install mosquitto-clients
+```
+
+### 测试运行
 
 订阅端通过mosquitto\_sub订阅指定主题的消息.
 
@@ -72,17 +86,7 @@ mosquitto_sub -h hostip -p 1883 -t test -i respi
 
 转发服务器把该主题的消息推送到订阅端。
 
-## 配置
-
-配置文件在
-
-_mosquitto/mosquitto.conf_
-
-修改好后重启服务。
-
-`sudo systemctl restart mosquitto`
-
-## Python客户端
+## 2. Python客户端
 
 ```
 sudo pip install paho-mqtt
