@@ -1,6 +1,17 @@
 # 树莓派MQTT客户端安装
 
-## 1.下载
+## 1.直接安装
+
+```
+sudo apt-get update
+sudo apt-get upgrade
+sudo apt-get dist-upgrade
+sudo apt-get install mosquitto mosquitto-clients paho-mqtt
+```
+
+## 2. 或手段安装
+
+### 2.1 下载
 
 ```
 CD MQTT 
@@ -8,7 +19,7 @@ git init
 git pull https://github.com/eclipse/mosquitto.git
 ```
 
-## 2. 安装
+### 2.2 安装
 
 编译前需安装必须的相关包
 
@@ -25,6 +36,12 @@ sudo make install
 ```
 
 如有问题自行搜索解决。
+
+如果树莓派作为客户端只需
+
+```
+sudo apt-get install mosquitto-clients
+```
 
 ## 3. 测试运行
 
