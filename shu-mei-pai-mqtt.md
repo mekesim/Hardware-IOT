@@ -47,12 +47,11 @@ sudo make install
 mosquitto_sub -h hostip -p 1883 -t test -i respi
 ```
 
-* -v:打印更多的调试信息
 * -t:订阅的主题（title）
 
 发布者通过mosquitto\_pub发布指定主题的消息。
 
-`mosquitto_pub -v -t BBColle01 -m "{\"id\":\"Nekotter\"}"`
+`mosquitto_pub -h hostip -t test -m "This is a test message from Pi"`
 
 转发服务器把该主题的消息推送到订阅端。
 
