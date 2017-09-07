@@ -6,7 +6,9 @@
 
 install Oracle JDK 8: [CentOS 7](https://www.digitalocean.com/community/tutorials/how-to-install-java-on-centos-and-fedora#install-oracle-java-8)
 
-#### SQL Database: PostgreSQL \(Optional\)
+Using the `java -version` command, users can confirm the default \(recently installed\) JDK version.
+
+#### \[Optional\] SQL Database: PostgreSQL
 
 ```
 # Update your system
@@ -110,7 +112,6 @@ Once ThingsBoard service is installed, you can execute the following script:
 # --loadDemo option will load demo data: users, devices, assets, rules, widgets.
 
 sudo /usr/share/thingsboard/bin/install/install.sh --loadDemo
-
 ```
 
 ### Start ThingsBoard service {#start-thingsboard-service}
@@ -119,14 +120,12 @@ Execute the following command to start ThingsBoard:
 
 ```
 sudo service thingsboard start
-
 ```
 
 Once started, you will be able to open Web UI using the following link:
 
 ```
 http://localhost:8080/
-
 ```
 
 **NOTE**: Please allow up to 90 seconds for the Web UI to start
