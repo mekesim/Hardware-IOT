@@ -46,7 +46,6 @@ Edit ThingsBoard configuration file
 
 ```
 sudo nano /etc/thingsboard/conf/thingsboard.yml
-
 ```
 
 Comment ‘\# HSQLDB DAO Configuration’ block.
@@ -67,7 +66,6 @@ Comment ‘\# HSQLDB DAO Configuration’ block.
 #    url: "${SPRING_DATASOURCE_URL:jdbc:hsqldb:file:${SQL_DATA_FOLDER:/tmp}/thingsboardDb;sql.enforce_size=false}"
 #    username: "${SPRING_DATASOURCE_USERNAME:sa}"
 #    password: "${SPRING_DATASOURCE_PASSWORD:}"
-
 ```
 
 For**PostgreSQL**:
@@ -92,5 +90,44 @@ spring:
     password: "${SPRING_DATASOURCE_PASSWORD:postgres}"
 ```
 
+For ThingsBoard service:
 
+```
+# Update ThingsBoard memory usage and restrict it to 256MB in /etc/thingsboard/conf/thingsboard.conf
+export 
+JAVA_OPTS
+=
+"
+$JAVA_OPTS
+ -Xms256M -Xmx256M"
+```
+
+### Run installation script {#run-installation-script}
+
+Once ThingsBoard service is installed, you can execute the following script:
+
+```
+# --loadDemo option will load demo data: users, devices, assets, rules, widgets.
+
+sudo /usr/share/thingsboard/bin/install/install.sh --loadDemo
+
+```
+
+### Start ThingsBoard service {#start-thingsboard-service}
+
+Execute the following command to start ThingsBoard:
+
+```
+sudo service thingsboard start
+
+```
+
+Once started, you will be able to open Web UI using the following link:
+
+```
+http://localhost:8080/
+
+```
+
+**NOTE**: Please allow up to 90 seconds for the Web UI to start
 
