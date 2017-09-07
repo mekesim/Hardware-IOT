@@ -4,7 +4,7 @@
 
 #### Java {#java}
 
-install Oracle JDK 8 
+install Oracle JDK 8
 
 ```
 cd ~
@@ -22,13 +22,16 @@ Now Java should be installed at`/usr/java/jdk1.8.0_60/jre/bin/java`, and linked 
 You may delete the archive file that you downloaded earlier:
 
 ```
-rm ~/
-jre-8u60-linux-x64.rpm
+rm jre-8u144-linux-x64.rpm
 ```
 
+Using the `java -version` command, users can confirm the default \(recently installed\) JDK version. Result should as below:
 
-
-Using the `java -version` command, users can confirm the default \(recently installed\) JDK version.
+```
+java version "1.8.0_144"
+Java(TM) SE Runtime Environment (build 1.8.0_144-b01)
+Java HotSpot(TM) 64-Bit Server VM (build 25.144-b01, mixed mode)
+```
 
 #### \[Optional\] SQL Database: PostgreSQL
 
