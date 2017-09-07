@@ -10,8 +10,6 @@
 
    Broadcom SoC 的编码方式，上图中外侧的编号
 
-
-
 ### Open Pi SPI function
 
 ![](/assets/pi_spi_enable.png)
