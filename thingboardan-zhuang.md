@@ -117,16 +117,10 @@ spring:
     password: "${SPRING_DATASOURCE_PASSWORD:postgres}"
 ```
 
-For ThingsBoard service:
+For ThingsBoard service, update ThingsBoard memory usage and restrict it to 256MB in /etc/thingsboard/conf/thingsboard.conf
 
 ```
-# Update ThingsBoard memory usage and restrict it to 256MB in /etc/thingsboard/conf/thingsboard.conf
-export 
-JAVA_OPTS
-=
-"
-$JAVA_OPTS
- -Xms256M -Xmx256M"
+export JAVA_OPTS="$JAVA_OPTS -Xms256M -Xmx256M"
 ```
 
 ### Run installation script {#run-installation-script}
