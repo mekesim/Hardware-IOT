@@ -10,4 +10,5 @@
 * [树莓派MQTT](shu-mei-pai-mqtt.md)
 * Paho介绍
 * [MAX31855树莓派](max31855shu-mei-pai.md)
+* [Thingboard安装](thingboardan-zhuang.md)
 
