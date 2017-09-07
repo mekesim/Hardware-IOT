@@ -4,15 +4,29 @@
 
 #### Java {#java}
 
-install Oracle JDK 8: [CentOS 7](https://www.digitalocean.com/community/tutorials/how-to-install-java-on-centos-and-fedora#install-oracle-java-8)
+install Oracle JDK 8 
 
 ```
 cd ~
-wget --no-cookies --no-check-certificate --header "Cookie: gpw_e24=http%3A%2F%2Fwww.oracle.com%2F; oraclelicense=accept-securebackup-cookie" \
-"http://download.oracle.com/otn-pub/java/jdk/8u144-b01/090f390dda5b47b9b721c7dfaa008135/jre-8u144-linux-x64.rpm"
+wget --header "Cookie: oraclelicense=accept-securebackup-cookie" http://download.oracle.com/otn-pub/java/jdk/8u144-b01/090f390dda5b47b9b721c7dfaa008135/jre-8u144-linux-x64.rpm
+```
 
+The latest revision can be found from [Oracle](http://www.oracle.com/technetwork/java/javase/downloads/jre8-downloads-2133155.html).
 
 ```
+sudo yum localinstall jre-8u144-linux-x64.rpm
+```
+
+Now Java should be installed at`/usr/java/jdk1.8.0_60/jre/bin/java`, and linked from`/usr/bin/java`.
+
+You may delete the archive file that you downloaded earlier:
+
+```
+rm ~/
+jre-8u60-linux-x64.rpm
+```
+
+
 
 Using the `java -version` command, users can confirm the default \(recently installed\) JDK version.
 
