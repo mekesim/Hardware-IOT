@@ -6,6 +6,14 @@
 
 install Oracle JDK 8: [CentOS 7](https://www.digitalocean.com/community/tutorials/how-to-install-java-on-centos-and-fedora#install-oracle-java-8)
 
+```
+cd ~
+wget --no-cookies --no-check-certificate --header "Cookie: gpw_e24=http%3A%2F%2Fwww.oracle.com%2F; oraclelicense=accept-securebackup-cookie" \
+"http://download.oracle.com/otn-pub/java/jdk/8u144-b01/090f390dda5b47b9b721c7dfaa008135/jre-8u144-linux-x64.rpm"
+
+
+```
+
 Using the `java -version` command, users can confirm the default \(recently installed\) JDK version.
 
 #### \[Optional\] SQL Database: PostgreSQL
